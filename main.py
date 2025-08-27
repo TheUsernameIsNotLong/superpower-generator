@@ -11,7 +11,7 @@ with open("powers.csv", newline="", encoding="utf-8-sig") as file:
 max_rarity = max(int(power["rarity"]) for power in powers)
 
 
-def calculate_luck(name):
+def calculate_luck():
     """Calculate a 'luck' score from 0-100 based on the user's name."""
 
     # Determine luck 0-100:
@@ -48,11 +48,15 @@ def calculate_luck(name):
     return int(round(luck))
 
 
-def calculate_rarity_weights(luck, constant):
-    """Calculate weights for each rarity level based on luck and a constant."""
+def calculate_rarity_weights(luck_type:int, constant:float):
+    """Calculate weights for each rarity level based on luck and a constant.
+    
+    Args:
+        luck (int): The luck score affecting the weights.
+        constant (float): A constant to adjust the weight calculation."""
     weights = []
     for rarity in range(1, max_rarity + 1):
-        weight = (rarity**luck) / (constant**rarity)
+        weight = (rarity**luck_type) / (constant**rarity)
         weights.append(weight)
     return weights
 
@@ -93,16 +97,16 @@ def display_powers(power_ids):
 name = input("Enter your name: ")
 print(f"Hello, {name}!")
 
-luck = calculate_luck(name)
-luck_modified = luck**2 / 400 # for calculating rarity weights
-luck_modified_2 = luck**2 / 2000 # for calculating number of abilties
+luck = calculate_luck()
+rarity_luck_modifier = luck**2 / 400 # for calculating rarity weights
+power_luck_modifier = luck**2 / 2000 # for calculating number of abilties
 print(f"Your luck score is: {luck}\n")
 
-luck_affected_rarities = calculate_rarity_weights(luck_modified, 32)
+luck_affected_rarities = calculate_rarity_weights(rarity_luck_modifier, 32)
 total_weight = sum(luck_affected_rarities)
 normalised_rarities = [weight / total_weight for weight in luck_affected_rarities]
 
-luck_affected_abilities = calculate_rarity_weights(luck_modified_2, 4)
+luck_affected_abilities = calculate_rarity_weights(power_luck_modifier, 4)
 total_weight_abilities = sum(luck_affected_abilities)
 normalised_abilities = [weight / total_weight_abilities for weight in luck_affected_abilities]
 
