@@ -1,0 +1,33 @@
+﻿ID,name,description,rarity,category,type
+0,Nothing,Literally nothing.,0,other,passive
+1,Super leaping,Enhanced leaping.,1,movement,active
+2,Levitation,"Ability to float (or glide), remaining in mid-air without losing altitude.",2,movement,passive
+3,Flight,Freedom of movement through air - overcome the strength of gravity.,4,movement,active
+4,Super strength,Enhanced durability and physical capabilties.,4,power,passive
+5,X-Ray Vision,Ability to see through material.,3,sight,passive
+6,Thermal Vision,Ability to see heat through material.,3,sight,active
+7,Laser Vision,Ability to shoot powerful lasers from the eyes.,4,power,active
+8,Cryo Vision,Ability to shoot powerful icy lasers from the eyes.,4,power,active
+9,Astral projection,"Can project an astral body, seperating the user's consciousness from their physical body.",5,psychic,active
+10,Invisibility,Ability to render the user transparent and hidden from sight.,4,psychic,active
+11,Light Manipulation,Allows the manipulation of light.,7,power,active
+12,Shadow Manipulation,Allows the manipulation of shadows.,7,power,active
+13,Telepathy,Communication to a person through their mind.,4,psychic,active
+14,Telekinesis,Movement and manipulation of matter through the user's mind.,6,psychic,active
+15,Hydrokinesis,Movement and manipulation of water through the user's mind.,5,psychic,active
+16,Electrokinesis,Control and manipulation of electrical currents through the user's mind.,5,psychic,active
+17,Ergokinesis,Control and manipulation of energy through the user's mind.,6,psychic,active
+18,Aerokinesis,Control and manipulation of air and wind through the user's mind.,5,psychic,active
+19,Pyrokinesis,Control and manipulation of fire and heat through the user's mind.,5,psychic,active
+20,Cryokinesis,Control and manipulation of ice and cold through the user's mind.,5,psychic,active
+21,Petrification,Ability to turn a living being into stone by looking at them,7,psychic,active
+22,Technokinesis,Control and manipulate technological devices through the user's mind.,5,psychic,active
+23,Teleportation,Ability to transport a person or entity to a known location.,4,movement,active
+24,Enhanced Teleportation,Ability to transport a person or entity to any location.,5,movement,active
+25,Precognition,Awareness of future events.,5,psychic,passive
+26,Shapeshifting,Ability to physically alter the user's body and appearance.,5,power,active
+27,Super speed,Ability to move incredibly fast.,3,movement,passive
+28,Time travel,"Ability to jump the flow of time, into the past or future.",7,power,active
+29,Time manipulation,Control and manipulation of time.,8,psychic,active
+30,Space manipulation,Control and manipulation of space.,8,psychic,active
+31,Reality manipulation,Control and manipulation of reality.,9,psychic,active
